@@ -1,0 +1,20 @@
+﻿@model List<WebAppMySQL.Models.Person>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>ASP.NET with MySQL</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        @foreach (var item in Model)
+        {
+            <div class="row">
+                <div class="col-md-6">Id: @item.Id</div>
+                <div class="col-md-6">Name: @item.Name</div>
+            </div>
+        }
+    </div>
+</div>
